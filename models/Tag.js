@@ -16,8 +16,6 @@ Tag.init(
     tag_name: {
       type: DataTypes.STRING,
     }
-
-    
   },
   {
     sequelize,
