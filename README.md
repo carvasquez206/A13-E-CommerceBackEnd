@@ -34,6 +34,7 @@ THEN I am able to successfully create, update, and delete data in my database
 
 - Download [Insomnia](https://insomnia.rest/download)
 - `npm i` 
+- `npm run seed`
 - `npm start`
 - [npm i sequelize](https://www.npmjs.com/package/sequelize)
 - `npm i mysql2`

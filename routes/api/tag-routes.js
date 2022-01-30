@@ -1,9 +1,11 @@
 const router = require('express').Router();
+//const { Model } = require('sequelize/types');
 const { Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
 
 router.get('/', (req, res) => {
+  // find all tags with associated Product data
   Tag.findAll({
     include: [
       {
@@ -21,8 +23,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  // find a single tag by its `id`
-  // be sure to include its associated Product data
+  // find a single tag by its `id` with associated Product data
   Tag.findOne({
     where: {
       id: req.params.id
